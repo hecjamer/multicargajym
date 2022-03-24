@@ -4,7 +4,7 @@ import './styles/app.scss'
 
 class App extends React.Component {
   render() {
-    return <div> <h1>Multicarga</h1></div>
+    return <div> <h1>Welcome to domain Multicarga</h1></div>
   }
 }
 
