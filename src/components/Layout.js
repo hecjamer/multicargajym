@@ -1,6 +1,7 @@
 import React from 'react';
 import CintaContacto from './CintaContacto';
 import Navbar from './Navbar';
+import Main from './Main';
 
 
 function Layout (props) {
@@ -9,6 +10,8 @@ function Layout (props) {
     <React.Fragment>
       <CintaContacto />
       <Navbar/>
+      <Main/>
+
       {props.children}
     </React.Fragment>
   )
