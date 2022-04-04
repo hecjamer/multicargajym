@@ -16,10 +16,10 @@ class CintaContacto extends React.Component {
           </div>
           <div className="col-lg-4 col-sm-12 cintaContacto-redesSociales">
             <div className="row">
-              <div className="col-3"><a href="https://twitter.leonidasesteban" class="social-link twitter"></a></div>
-              <div className="col-3"><a href="https://facebook.com/leonidas.esteban" class="social-link facebook"></a></div>
-              <div className="col-3"><a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a></div>
-              <div className="col-3"><a href="https://instagram.com/leonidasesteban" class="social-link github"></a></div>
+              <div className="col-3"><a href="https://twitter.leonidasesteban" className="social-link twitter"></a></div>
+              <div className="col-3"><a href="https://facebook.com/leonidas.esteban" className="social-link facebook"></a></div>
+              <div className="col-3"><a href="https://instagram.com/leonidasesteban" className="social-link instagram"></a></div>
+              <div className="col-3"><a href="https://instagram.com/leonidasesteban" className="social-link github"></a></div>
 
             </div>
 

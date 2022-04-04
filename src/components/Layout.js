@@ -9,7 +9,7 @@ function Layout (props) {
   return (
     <React.Fragment>
       <CintaContacto />
-      <Navbar/>
+      <Navbar />
       <Main/>
 
       {props.children}

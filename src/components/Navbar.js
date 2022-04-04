@@ -2,21 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
+import logo from '../images/logo.svg'
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 function Navbar() {
   return (
-    <div>
+    <div className="sticky-top">
 
-      <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <ReactBootStrap.Navbar collapseOnSelect expand="lg">
           <ReactBootStrap.Container fluid>
 
-            <ReactBootStrap.Navbar.Brand href="#">Glosario de terminos</ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar.Brand href="/"><img alt="" src={logo} width="40" height="40" className="d-inline-block align-top"/>{' '} Multicarga </ReactBootStrap.Navbar.Brand>
 
             <NavbarDropdown/>
-
-
 
             <ReactBootStrap.Navbar.Toggle aria-controls="offcanvasNavbar" />
 
@@ -43,3 +42,9 @@ function Navbar() {
 }
 
 export default Navbar
+
+
+
+
+
+
