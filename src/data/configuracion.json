@@ -1,0 +1,80 @@
+{
+  "contacto": {
+    "nombre": "prueba nombre contacto",
+
+    "card": [
+      {
+        "id": 1,
+        "imagen": "img1.jpg",
+        "titulo": "Transporte de Carga Terrestre",
+        "descripcion": "Transportamos cado con responsabilidad y calidad"
+      },
+      {
+        "id": 2,
+        "imagen": "img2.jpg",
+        "titulo": "Mudanzas Bogota",
+        "descripcion": "Transportamos su mercacia dentro y fcado con responsabilidad y calidad"
+      }
+    ]
+
+    },
+  "navbar": {
+    "nombre": "prueba nombre navbar",
+
+    "card": [
+      {
+        "id": 1,
+        "imagen": "img1.jpg",
+        "titulo": "Transporte de Carga Terrestre",
+        "descripcion": "Transportamos cado con responsabilidad y calidad"
+      },
+      {
+        "id": 2,
+        "imagen": "img2.jpg",
+        "titulo": "Mudanzas Bogota",
+        "descripcion": "Transportamos su mercacia dentro y fcado con responsabilidad y calidad"
+      }
+    ]
+
+    },
+  "carousel": {
+    "nombre": "prueba nombre carousel",
+
+    "card": [
+      {
+        "id": 1,
+        "imagen": "img1.jpg",
+        "titulo": "Transporte de Carga Terrestre",
+        "descripcion": "Transportamos cado con responsabilidad y calidad"
+      },
+      {
+        "id": 2,
+        "imagen": "img2.jpg",
+        "titulo": "Mudanzas Bogota",
+        "descripcion": "Transportamos su mercacia dentro y fcado con responsabilidad y calidad"
+      }
+    ]
+
+    },
+
+  "servicios": {
+    "nombre": "prueba nombre servisio",
+
+    "card": [
+      {
+        "id": 1,
+        "imagen": "img1.jpg",
+        "titulo": "Transporte de Carga Terrestre",
+        "descripcion": "Transportamos cado con responsabilidad y calidad"
+      },
+      {
+        "id": 2,
+        "imagen": "img2.jpg",
+        "titulo": "Mudanzas Bogota",
+        "descripcion": "Transportamos su mercacia dentro y fcado con responsabilidad y calidad"
+      }
+    ]
+
+    }
+
+}
