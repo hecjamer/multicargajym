@@ -91,6 +91,24 @@
         "imagen": "img5.jpg",
         "titulo": "Almacenamiento y Bodegaje",
         "descripcion": "Témenos un amplio espacio de almacenamiento, con ventilación y seguridad para poder brindar garantía de que sus muebles y enseres estarán debidamente resguardados por el tiempo que sea necesario. "
+      },
+      {
+        "id": 6,
+        "imagen": "img3.jpg",
+        "titulo": "Embalaje de Mercancía",
+        "descripcion": "Empacamos su mercancía con la mayor delicadeza, seguridad y compactación en materiales de optima calidad y confiabilidad."
+      },
+      {
+        "id": 7,
+        "imagen": "img4.jpg",
+        "titulo": "Mudanzas Bogotá",
+        "descripcion": "Somos especializados en mudanzas, brindando responsabilidad, delicadeza, seguridad con su muebles y enseres para garantizar una total tranquilidad a su familia de que sus objetos valiosos quedaran en perfectas condiciones. "
+      },
+      {
+        "id": 8,
+        "imagen": "img5.jpg",
+        "titulo": "Almacenamiento y Bodegaje",
+        "descripcion": "Témenos un amplio espacio de almacenamiento, con ventilación y seguridad para poder brindar garantía de que sus muebles y enseres estarán debidamente resguardados por el tiempo que sea necesario. "
       }
     ]
 
