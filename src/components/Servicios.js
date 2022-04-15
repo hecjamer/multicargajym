@@ -9,6 +9,15 @@ class Servicios extends React.Component {
 
   render() {
 
+    // configuracion.servicios.card.map(detalle => {
+    //   {detalle.imgFooter.map(imgFooter => {
+    //     console.log(imgFooter.nombre)
+
+    //   })}
+    // })
+
+
+
     return (
       <div className="container-fluid servicios-contenedor-fluid">
         <div className="container container-servicios">
@@ -24,7 +33,19 @@ class Servicios extends React.Component {
                         <h2>{detalle.titulo}</h2>
                         <p>{detalle.descripcion}</p>
                       </div>
-                      <div className="card-footer"></div>
+                      <div className="card-footer">
+
+                      {detalle.imgFooter.map(detalle => {
+                        return (
+                        <div key={detalle.id}>
+                          <i className={detalle.icono}></i>
+                          <h6>{detalle.nombre}</h6>
+                        </div>
+                        )
+
+                      })}
+
+                      </div>
                     </div>
                   ))}
 

@@ -66,50 +66,118 @@
         "id": 1,
         "imagen": "img1.jpg",
         "titulo": "Transporte de Carga Terrestre",
-        "descripcion": "Transportamos su mercacia dentro y fuera de la ciudad con los mejores presios del mercado con responsabilidad y calidad"
+        "descripcion": "Transportamos su mercacia dentro y fuera de la ciudad con los mejores presios del mercado con responsabilidad y calidad",
+        "imgFooter": [
+          {
+            "id": "1",
+            "nombre": "Monitoreo",
+            "icono": "icon-fi-monitoreo"
+          },
+          {
+            "id": "2",
+            "nombre": "Ubicacion",
+            "icono": "icon-fi-gps"
+          },
+          {
+            "id": "3",
+            "nombre": "Eficiencia",
+            "icono": "icon-fi-eficiencia"
+          }
+        ]
       },
       {
         "id": 2,
         "imagen": "img2.jpg",
         "titulo": "Transporte de Mercancia Bogotá",
-        "descripcion": "Transportamos su mercancía  y enseres dentro de la ciudad con la mayor delicadeza y confiabilidad."
+        "descripcion": "Transportamos su mercancía  y enseres dentro de la ciudad con la mayor delicadeza y confiabilidad.",
+        "imgFooter": [
+          {
+            "id": "1",
+            "nombre": "Seguridad",
+            "icono": "icon-fi-guarda"
+          },
+          {
+            "id": "2",
+            "nombre": "Responsabilidad",
+            "icono": "icon-fi-torso"
+          },
+          {
+            "id": "3",
+            "nombre": "Protocolos",
+            "icono": "icon-fi-protocolo"
+          }
+        ]
       },
       {
         "id": 3,
         "imagen": "img3.jpg",
         "titulo": "Embalaje de Mercancía",
-        "descripcion": "Empacamos su mercancía con la mayor delicadeza, seguridad y compactación en materiales de optima calidad y confiabilidad."
+        "descripcion": "Empacamos su mercancía con la mayor delicadeza, seguridad y compactación en materiales de optima calidad y confiabilidad.",
+        "imgFooter": [
+          {
+            "id": "1",
+            "nombre": "Delicadeza",
+            "icono": "icon-fi-caja-embalaje"
+          },
+          {
+            "id": "2",
+            "nombre": "Compactación",
+            "icono": "icon-fi-cinta-embalar"
+          },
+          {
+            "id": "3",
+            "nombre": "Confiabilidad",
+            "icono": "icon-fi-guacal"
+          }
+        ]
       },
       {
         "id": 4,
         "imagen": "img4.jpg",
         "titulo": "Mudanzas Bogotá",
-        "descripcion": "Somos especializados en mudanzas, brindando responsabilidad, delicadeza, seguridad con su muebles y enseres para garantizar una total tranquilidad a su familia de que sus objetos valiosos quedaran en perfectas condiciones. "
+        "descripcion": "Somos especializados en mudanzas, brindando responsabilidad, delicadeza, seguridad con su muebles y enseres para garantizar una total tranquilidad a su familia de que sus objetos valiosos quedaran en perfectas condiciones. ",
+        "imgFooter": [
+          {
+            "id": "1",
+            "nombre": "Delicadeza",
+            "icono": "icon-fi-zorra"
+          },
+          {
+            "id": "2",
+            "nombre": "Calidad",
+            "icono": "icon-fi-sofa"
+          },
+          {
+            "id": "3",
+            "nombre": "Compromiso",
+            "icono": "icon-fi-camion-trasteo"
+          }
+        ]
       },
       {
         "id": 5,
         "imagen": "img5.jpg",
         "titulo": "Almacenamiento y Bodegaje",
-        "descripcion": "Témenos un amplio espacio de almacenamiento, con ventilación y seguridad para poder brindar garantía de que sus muebles y enseres estarán debidamente resguardados por el tiempo que sea necesario. "
-      },
-      {
-        "id": 6,
-        "imagen": "img3.jpg",
-        "titulo": "Embalaje de Mercancía",
-        "descripcion": "Empacamos su mercancía con la mayor delicadeza, seguridad y compactación en materiales de optima calidad y confiabilidad."
-      },
-      {
-        "id": 7,
-        "imagen": "img4.jpg",
-        "titulo": "Mudanzas Bogotá",
-        "descripcion": "Somos especializados en mudanzas, brindando responsabilidad, delicadeza, seguridad con su muebles y enseres para garantizar una total tranquilidad a su familia de que sus objetos valiosos quedaran en perfectas condiciones. "
-      },
-      {
-        "id": 8,
-        "imagen": "img5.jpg",
-        "titulo": "Almacenamiento y Bodegaje",
-        "descripcion": "Témenos un amplio espacio de almacenamiento, con ventilación y seguridad para poder brindar garantía de que sus muebles y enseres estarán debidamente resguardados por el tiempo que sea necesario. "
+        "descripcion": "Témenos un amplio espacio de almacenamiento, con ventilación y seguridad para poder brindar garantía de que sus muebles y enseres estarán debidamente resguardados por el tiempo que sea necesario. ",
+        "imgFooter": [
+          {
+            "id": "1",
+            "nombre": "Tranquilidad",
+            "icono": "icon-fi-tranquilidad"
+          },
+          {
+            "id": "2",
+            "nombre": "Resguardo",
+            "icono": "icon-fi-resguardo"
+          },
+          {
+            "id": "3",
+            "nombre": "Ventilación",
+            "icono": "icon-fi-ventilacion"
+          }
+        ]
       }
+
     ]
 
     }
