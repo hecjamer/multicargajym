@@ -1,20 +1,35 @@
 {
   "contacto": {
-    "nombre": "prueba nombre contacto",
-
-    "card": [
+    "telefono": 2548021,
+    "celular": 3103434753,
+    "email": "cytelsystem@gmail.com",
+    "direccion": "Calle 104 # 20 54 Bogotá",
+    "redesSociales": [
       {
         "id": 1,
-        "imagen": "img1.jpg",
-        "titulo": "Transporte de Carga Terrestre",
-        "descripcion": "Transportamos cado con responsabilidad y calidad"
+        "className": "social-link twitter",
+        "href": "https://twitter.leonidasesteban",
+        "col": "col-3"
       },
       {
         "id": 2,
-        "imagen": "img2.jpg",
-        "titulo": "Mudanzas Bogota",
-        "descripcion": "Transportamos su mercacia dentro y fcado con responsabilidad y calidad"
+        "className": "social-link facebook",
+        "href": "https://facebook.com/leonidas.esteban",
+        "col": "col-3"
+      },
+      {
+        "id": 3,
+        "className": "social-link instagram",
+        "href": "https://instagram.com/leonidasesteban",
+        "col": "col-3"
+      },
+      {
+        "id": 4,
+        "className": "social-link github",
+        "href": "https://instagram.com/leonidasesteban",
+        "col": "col-3"
       }
+
     ]
 
     },

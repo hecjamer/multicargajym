@@ -29,11 +29,17 @@
 
   &-redesSociales {
 
-    div.col-3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .row {
+      div.col-3 {
+        text-align: center;
+        a {
+
+        }
+
+      }
+
     }
+
   }
 
 

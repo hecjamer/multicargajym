@@ -11,6 +11,8 @@
     text-transform: uppercase!important;
     font-size: 100%;
     line-height: inherit;
+    text-align: center;
+
   }
   h2 {
     font-size: 2.5em;
@@ -19,6 +21,7 @@
     font-weight: 400;
     color: inherit;
     text-rendering: optimizeLegibility;
+    text-align: center;
 
   }
 }
@@ -71,8 +74,21 @@
 }
 
 .element-card-text {
+  margin: 1.5em;
+  overflow: hidden;
   h2 {
-    font-size: 28px;
+    font-size: 4vh;
+    font-weight: 300;
+  }
+
+  p {
+    text-align: justify;
+    color: grey;
+    font-weight: 300;
+    /* font-size: calc(0.4em + 0.4vw); */
+    font-size: 1.7vh;
+
+
   }
 }
 
