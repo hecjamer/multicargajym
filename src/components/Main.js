@@ -1,11 +1,12 @@
 import React from 'react';
+import './styles/main.scss';
 import ComponentCarousel from './ComponentCarousel';
 import Servicios from './Servicios';
 
 class Main extends React.Component {
   render() {
     return (
-      <div>
+      <div className="main">
 
         <ComponentCarousel />
         <Servicios />

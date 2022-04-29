@@ -26,7 +26,6 @@ class Servicios extends React.Component {
               <h2>{configuracion.servicios.nombre2}</h2>
             </div>
 
-
               <div className="row cont-card">
 
                     {configuracion.servicios.card.map(detalle => (
