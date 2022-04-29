@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/CintaContacto.scss';
 import contacto from '../data/configuracion.json'
 
+import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
+
 class CintaContacto extends React.Component {
   render() {
     return (
@@ -9,10 +11,10 @@ class CintaContacto extends React.Component {
         <div className="row">
           <div className="col-lg-8 col-sm-12 cintaContacto-Contactenos">
             <div className="row">
-              <div className="col-xxl-2 col-xl-6 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{contacto.contacto.telefono}</a></div>
-              <div className="col-xxl-2 col-xl-6 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{contacto.contacto.celular}</a></div>
-              <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href="mailto:logistica.bujacargo.jm@gmail.com"><i className="fi-mail"></i>{contacto.contacto.email}</a></div>
-              <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-marker"></i>{contacto.contacto.direccion}</a></div>
+              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{contacto.contacto.telefono}</a></div>
+              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{contacto.contacto.celular}</a></div>
+              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href="mailto:logistica.bujacargo.jm@gmail.com"><i className="fi-mail"></i>{contacto.contacto.email}</a></div>
+              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-marker"></i>{contacto.contacto.direccion}</a></div>
             </div>
           </div>
           <div className="col-lg-4 col-sm-12 cintaContacto-redesSociales">
