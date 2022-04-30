@@ -2,18 +2,21 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
+import navbarInfo from '../data/configuracion.json'
 import logo from '../images/logo.svg'
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 function Navbar() {
+  console.log(navbarInfo.navbar.nombre)
+
   return (
     <div className="sticky-top">
 
       <ReactBootStrap.Navbar collapseOnSelect expand="lg">
           <ReactBootStrap.Container fluid>
 
-            <ReactBootStrap.Navbar.Brand href="/"><img alt="" src={logo} width="40" height="40" className="d-inline-block align-top"/>{' '} Multicarga </ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar.Brand href="/"><img alt="" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
 
             <NavbarDropdown/>
 
@@ -36,6 +39,8 @@ function Navbar() {
 
           </ReactBootStrap.Container>
       </ReactBootStrap.Navbar>
+
+
 
     </div>
   );

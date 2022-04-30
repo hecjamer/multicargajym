@@ -1,6 +1,6 @@
 {
   "contacto": {
-    "telefono": 2548021,
+    "telefono": 3602815,
     "celular": 3103434753,
     "email": "cytelsystem@gmail.com",
     "direccion": "Calle 104 # 20 54 Bogotá",
@@ -34,7 +34,8 @@
 
     },
   "navbar": {
-    "nombre": "prueba nombre navbar",
+    "nombre": "Multicarga",
+    "logo": "logo.svg",
 
     "card": [
       {
@@ -80,7 +81,7 @@
       {
         "id": 1,
         "imagen": "img1.jpg",
-        "titulo": "Transporte de Carga Terrestre",
+        "titulo": "Transporte de Carga Terrestre1",
         "descripcion": "Transportamos su mercacia dentro y fuera de la ciudad con los mejores presios del mercado con responsabilidad y calidad",
         "imgFooter": [
           {
