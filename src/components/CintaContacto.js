@@ -24,8 +24,7 @@ class CintaContacto extends React.Component {
                   <div className={redes.col} key={redes.id}><a href={redes.href} className={redes.className}></a></div>
                 )
               })}
-              </div>
-
+            </div>
           </div>
         </div>
 

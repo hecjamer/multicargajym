@@ -196,6 +196,88 @@
 
     ]
 
+    },
+  "PlaceTime": {
+      "url": "6.jpg",
+      "titulo": "Nuestros Colaboradores",
+      "detalle": "Somos un grupo de personas que trabajamos con corazón, alma y dedicación para ofrecerle a nuestros clientes un buen servicio de transporte de sus mercancías con la mayor disponibilidad de tiempo, agilidad, responsabilidad y seguridad"
+    },
+  "footer": {
+    "propuestaValor": {
+      "titulo": "PROPUESTA VALOR",
+      "detalle": "Creamos valor por medio de nuestra calidad en el servicio, respaldo, soluciones logísticas integrales y a la medida, reportes personalizados, precios competitivos e información en tiempo real de sus mercancías."
+    },
+    "nuestrosServicios": {
+      "nombre": "NUESTROS SERVICIOS",
+
+      "servicios": [
+        {
+          "id": 1,
+          "nombre": "Transporte de Carga Terrestre",
+          "href": "/"
+        },
+        {
+          "id": 2,
+          "nombre": "Servicio de Transporte de mercancia bogota",
+          "href": "/"
+        },
+        {
+          "id": 3,
+          "nombre": "Embalaje de Mercancía",
+          "href": "/"
+        },
+        {
+          "id": 4,
+          "nombre": "Mudanzas en Bogotá",
+          "href": "/"
+        },
+        {
+          "id": 5,
+          "nombre": "Almacenamiento y Bodegaje en Bogotá",
+          "href": "/"
+        }
+      ]
+    },
+    "contactanos": {
+      "nombre": "CONTACTANOS",
+      "comunicaciones": [
+        {
+          "id": 1,
+          "icono": "social-link-whatsapp whatsapp",
+          "detalle": 3102508479,
+          "href": "/",
+          "color": "#ff000000"
+        },
+        {
+          "id": 2,
+          "icono": "fi-telephone",
+          "detalle": "PBX: (1) 4666697",
+          "href": "/",
+          "color": "#7fff00"
+        },
+        {
+          "id": 3,
+          "icono": "fi-at-sign",
+          "detalle": "logistica.bujacargo.jm@gmail.com",
+          "href": "mailto:logistica.bujacargo.jm@gmail.com",
+          "color": "#ffbd22"
+        },
+        {
+          "id": 4,
+          "icono": "fi-marker",
+          "detalle": "Calle 10A No 42B - 38 Bogotá, Colombia",
+          "href": "/",
+          "color": "#ff0000"
+        }
+
+
+      ]
+    },
+    "derechosyRedes": {
+      "icono": "fi-web",
+      "derechos": "Derechos Reservados CytelSystem / Hector Javier Moreno"
     }
+
+  }
 
 }

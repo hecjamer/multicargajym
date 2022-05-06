@@ -2,6 +2,7 @@ import React from 'react';
 import CintaContacto from './CintaContacto';
 import Navbar from './Navbar';
 import Main from './Main';
+import Footer from './Footer';
 
 
 function Layout (props) {
@@ -11,7 +12,7 @@ function Layout (props) {
       <CintaContacto />
       <Navbar />
       <Main/>
-
+      <Footer/>
       {props.children}
     </React.Fragment>
   )
