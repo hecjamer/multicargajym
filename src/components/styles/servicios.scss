@@ -30,19 +30,12 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
-
-  /* display: grid;
-  grid-template-rows: 210px 210px 80px;
-  grid-template-areas: "image" "text" "stats"; */
-
-
-
 }
 
 
 .element-card {
-  min-width: 350px;
-  max-width: 350px;
+  min-width: 330px;
+  max-width: 330px;
   background: white;
   border-radius: 18px;
   box-shadow: 5px 5px 15px rgb(0 0 0 / 90%);
