@@ -17,8 +17,8 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Switch>
-            <Route exact path="/Badges" component={Badges} />
-            <Route component={NotFound} />
+            {/* <Route exact path="/Badges" component={Badges} />
+            <Route component={NotFound} /> */}
           </Switch>
         </Layout>
       </BrowserRouter>

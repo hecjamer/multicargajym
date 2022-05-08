@@ -1,9 +1,9 @@
 {
   "contacto": {
-    "telefono": 3602815,
-    "celular": 3103434753,
-    "email": "cytelsystem@gmail.com",
-    "direccion": "Calle 104 # 20 54 Bogotá",
+    "telefono": "5926249",
+    "celular": 3206680205,
+    "email": "multicargajym@gmail.com",
+    "direccion": "Carrera 21 # 159 53 Bogotá",
     "redesSociales": [
       {
         "id": 1,
@@ -87,17 +87,20 @@
           {
             "id": "1",
             "nombre": "Monitoreo",
-            "icono": "icon-fi-monitoreo"
+            "icono": "icon-fi-monitoreo",
+            "class": "card-footer-left"
           },
           {
             "id": "2",
             "nombre": "Ubicacion",
-            "icono": "icon-fi-gps"
+            "icono": "icon-fi-gps",
+            "class": "card-footer-center"
           },
           {
             "id": "3",
             "nombre": "Eficiencia",
-            "icono": "icon-fi-eficiencia"
+            "icono": "icon-fi-eficiencia",
+            "class": "card-footer-right"
           }
         ]
       },
@@ -110,17 +113,20 @@
           {
             "id": "1",
             "nombre": "Seguridad",
-            "icono": "icon-fi-guarda"
+            "icono": "icon-fi-guarda",
+            "class": "card-footer-left"
           },
           {
             "id": "2",
             "nombre": "Responsabilidad",
-            "icono": "icon-fi-torso"
+            "icono": "icon-fi-torso",
+            "class": "card-footer-center"
           },
           {
             "id": "3",
             "nombre": "Protocolos",
-            "icono": "icon-fi-protocolo"
+            "icono": "icon-fi-protocolo",
+            "class": "card-footer-right"
           }
         ]
       },
@@ -133,17 +139,20 @@
           {
             "id": "1",
             "nombre": "Delicadeza",
-            "icono": "icon-fi-caja-embalaje"
+            "icono": "icon-fi-caja-embalaje",
+            "class": "card-footer-left"
           },
           {
             "id": "2",
             "nombre": "Compactación",
-            "icono": "icon-fi-cinta-embalar"
+            "icono": "icon-fi-cinta-embalar",
+            "class": "card-footer-center"
           },
           {
             "id": "3",
             "nombre": "Confiabilidad",
-            "icono": "icon-fi-guacal"
+            "icono": "icon-fi-guacal",
+            "class": "card-footer-right"
           }
         ]
       },
@@ -156,17 +165,20 @@
           {
             "id": "1",
             "nombre": "Delicadeza",
-            "icono": "icon-fi-zorra"
+            "icono": "icon-fi-zorra",
+            "class": "card-footer-left"
           },
           {
             "id": "2",
             "nombre": "Calidad",
-            "icono": "icon-fi-sofa"
+            "icono": "icon-fi-sofa",
+            "class": "card-footer-center"
           },
           {
             "id": "3",
             "nombre": "Compromiso",
-            "icono": "icon-fi-camion-trasteo"
+            "icono": "icon-fi-camion-trasteo",
+            "class": "card-footer-right"
           }
         ]
       },
@@ -179,17 +191,20 @@
           {
             "id": "1",
             "nombre": "Tranquilidad",
-            "icono": "icon-fi-tranquilidad"
+            "icono": "icon-fi-tranquilidad",
+            "class": "card-footer-left"
           },
           {
             "id": "2",
             "nombre": "Resguardo",
-            "icono": "icon-fi-resguardo"
+            "icono": "icon-fi-resguardo",
+            "class": "card-footer-center"
           },
           {
             "id": "3",
             "nombre": "Ventilación",
-            "icono": "icon-fi-ventilacion"
+            "icono": "icon-fi-ventilacion",
+            "class": "card-footer-right"
           }
         ]
       }

@@ -40,7 +40,7 @@ class Servicios extends React.Component {
 
                         {detalle.imgFooter.map(detalle => {
                           return (
-                          <div key={detalle.id}>
+                          <div key={detalle.id} className={detalle.class}>
                             <i className={detalle.icono}></i>
                             <h6>{detalle.nombre}</h6>
                           </div>
