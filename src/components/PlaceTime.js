@@ -1,5 +1,4 @@
 import React from 'react'
-// import ReactDOM from 'react-dom';
 import './styles/placeTime.scss'
 import Placetime from '../data/configuracion.json'
 

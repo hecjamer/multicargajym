@@ -30,6 +30,7 @@
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-bottom: 1%;
 }
 
 
@@ -43,7 +44,7 @@
   text-align: center;
   transition: 0.5s ease;
   cursor: pointer;
-  margin: 5px;
+  margin: 1%;
   padding: 0;
 
   display: grid;
@@ -70,7 +71,7 @@
   margin: 1.5em;
   overflow: hidden;
   h2 {
-    font-size: 4vh;
+    font-size: 150%;
     font-weight: 300;
   }
 
@@ -79,7 +80,7 @@
     color: grey;
     font-weight: 300;
     /* font-size: calc(0.4em + 0.4vw); */
-    font-size: 1.7vh;
+    font-size: 75%;
 
 
   }
