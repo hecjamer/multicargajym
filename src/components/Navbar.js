@@ -8,8 +8,6 @@ import logo from '../images/logo.svg'
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 function Navbar() {
-  console.log(navbarInfo.navbar.nombre)
-
   return (
     <div className="sticky-top">
 

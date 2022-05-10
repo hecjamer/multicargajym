@@ -6,7 +6,6 @@ import Placetime from '../data/configuracion.json'
 class PlaceTime extends React.Component {
 
   render() {
-    console.log(Placetime.PlaceTime.url)
     return (
       <div className="container-fluid placeTime-contenedor-fluid">
         <div className="row">
@@ -19,9 +18,7 @@ class PlaceTime extends React.Component {
           <p>{Placetime.PlaceTime.detalle}</p>
           <a href="https://es.wikipedia.org/wiki/Honolulu" className="btn btn-outline-light btn-sm">Conocenos Más</a>
           </div>
-
         </div>
-
       </div>
 
     )

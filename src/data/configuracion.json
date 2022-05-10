@@ -56,19 +56,32 @@
   "carousel": {
     "nombre": "prueba nombre carousel",
 
-    "card": [
+    "diapositivas": [
       {
         "id": 1,
-        "imagen": "img1.jpg",
-        "titulo": "Transporte de Carga Terrestre",
-        "descripcion": "Transportamos cado con responsabilidad y calidad"
+        "imagen": "img-carousel1.jpg",
+        "alt": "Camion en carretera",
+        "descripcion": ""
       },
       {
         "id": 2,
-        "imagen": "img2.jpg",
-        "titulo": "Mudanzas Bogota",
-        "descripcion": "Transportamos su mercacia dentro y fcado con responsabilidad y calidad"
+        "imagen": "img-carousel2.jpg",
+        "alt": "Instalaciones de la empresa",
+        "descripcion": "Equipo trabajando por ustedes"
+      },
+      {
+        "id": 3,
+        "imagen": "img-carousel3.jpg",
+        "alt": "Puente transmilenio calle 6 con 30",
+        "descripcion": "Transportamos su carga en todos los sentidos"
+      },
+      {
+        "id": 4,
+        "imagen": "img-carousel4.jpg",
+        "alt": "nuestra empresa con sus colaboradores",
+        "descripcion": "Empleados trabajando por ustedes"
       }
+
     ]
 
     },
