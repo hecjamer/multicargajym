@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
 import navbarInfo from '../data/configuracion.json'
-import logo from '../images/logo.svg'
+// import logo from '../images/logo.svg'
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
@@ -14,7 +14,7 @@ function Navbar() {
       <ReactBootStrap.Navbar collapseOnSelect expand="lg">
           <ReactBootStrap.Container fluid>
 
-            <ReactBootStrap.Navbar.Brand href="/"><img alt="" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar.Brand href="/" className="navlogo"><img alt="" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
 
             <NavbarDropdown/>
 
