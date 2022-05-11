@@ -1,5 +1,4 @@
 .ComponentCarousel {
-  /* margin-top: -92px; */
 
   img {
     max-height: 70vh;
@@ -23,16 +22,31 @@
       justify-content: center;
 
       .row {
+        justify-content: flex-end;
         .textCarouselRight {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-end;
+          padding: 0 4%;
+
           h1 {
-            font-size: 3rem;
-            text-align: right;
+            text-align: end;
           }
           p {
             text-align: justify;
+          }
+          a {
+            margin-right: 1%;
+
+          }
+
+          button {
+            background-color: #97c93e !important;
+            color: white;
           }
         }
       }
     }
   }
 }
+

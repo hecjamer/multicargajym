@@ -54,7 +54,10 @@
 
     },
   "carousel": {
-    "nombre": "prueba nombre carousel",
+    "tituloPrincipalH1": "Soluciones Integrales Multicarga",
+    "tituloPrincipalP": "Multicarga es una empresa trasportadora dedicada a transporte de toda clase de mercancía a nivel nacional y local garantizando seguridad, agilidad y experiencia.",
+    "tituloPrincipalA": "Quiero ser Conductor",
+    "tituloPrincipalBTN": "Cotización",
 
     "diapositivas": [
       {
