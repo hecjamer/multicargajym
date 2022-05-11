@@ -282,28 +282,28 @@
         {
           "id": 1,
           "icono": "social-link-whatsapp whatsapp",
-          "detalle": 3102508479,
+          "detalle": 3206680205,
           "href": "/",
           "color": "#ff000000"
         },
         {
           "id": 2,
           "icono": "fi-telephone",
-          "detalle": "PBX: (1) 4666697",
+          "detalle": "PBX: (1) 5926249",
           "href": "/",
           "color": "#7fff00"
         },
         {
           "id": 3,
           "icono": "fi-at-sign",
-          "detalle": "logistica.bujacargo.jm@gmail.com",
-          "href": "mailto:logistica.bujacargo.jm@gmail.com",
+          "detalle": "multicargajym@gmail.com",
+          "href": "mailto:multicargajym@gmail.com",
           "color": "#ffbd22"
         },
         {
           "id": 4,
           "icono": "fi-marker",
-          "detalle": "Calle 10A No 42B - 38 Bogotá, Colombia",
+          "detalle": "Carrera 21 # 159 53 Bogotá, Colombia",
           "href": "/",
           "color": "#ff0000"
         }
