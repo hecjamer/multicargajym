@@ -50,3 +50,105 @@
   }
 }
 
+
+
+@media (max-width: 768px) {
+  .ComponentCarousel {
+    h3 {
+      display: none;
+    }
+
+
+    .overlay {
+      .row {
+
+        .textCarouselRight {
+          display: flex;
+          padding: 0 4%;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+
+          h1 {
+            /* text-align: center !important;
+            font-size: 1.1rem; */
+            display: none;
+
+            .sticky-top {
+
+              .navlogo {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                font-size: 1.25rem;
+              }
+
+              .filter-green{
+                /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(170deg) brightness(118%) contrast(119%) !important; */
+                filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(22deg) brightness(118%) contrast(119%) !important;
+                margin-right: 2%;
+              }
+
+
+
+              .navbar {
+                padding: 0.3px;
+                .container-fluid {
+                  padding: 5px !important;
+                  background-color: rgba(52, 58, 64, 0.57) !important;
+                  display: flex;
+                  justify-content: space-around;
+                  a {
+
+                  }
+
+
+
+                  .navbar-toggler {
+
+
+                  }
+
+
+
+                }
+
+              }
+
+            }
+          }
+          p {
+            color:red;
+            display: none;
+          }
+          a {
+            display: none;
+
+          }
+
+          button {
+            border-radius: 5%;
+            background-color: #97c93e24 !important;
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+
+}
+
+@media (min-width: 769px) {
+
+
+}
+
+
+@media (min-width: 992px) {
+
+
+}

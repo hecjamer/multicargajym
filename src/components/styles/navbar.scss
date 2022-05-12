@@ -8,7 +8,9 @@
   }
 
   .filter-green{
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(170deg) brightness(118%) contrast(119%) !important;
+    /* filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(170deg) brightness(118%) contrast(119%) !important; */
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(22deg) brightness(118%) contrast(119%) !important;
+    margin-right: 2%;
   }
 
 
@@ -41,7 +43,43 @@
 
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
+  .sticky-top {
+
+    .navlogo {
+
+    }
+
+    .filter-green{
+
+    }
+
+
+
+    .navbar {
+
+      .container-fluid {
+        padding: 5px 15px !important;
+
+        a {
+
+        }
+
+
+
+        .navbar-toggler {
+
+
+        }
+
+
+
+      }
+
+    }
+
+  }
 
 
 }
