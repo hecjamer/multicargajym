@@ -7,6 +7,12 @@
     font-size: 1.25rem;
   }
 
+  .filter-green{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(170deg) brightness(118%) contrast(119%) !important;
+  }
+
+
+
   .navbar {
     padding: 0.3px;
     .container-fluid {
