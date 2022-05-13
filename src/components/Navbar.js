@@ -14,7 +14,7 @@ function Navbar() {
       <ReactBootStrap.Navbar collapseOnSelect expand="lg">
           <ReactBootStrap.Container fluid>
 
-            <ReactBootStrap.Navbar.Brand href="/" className="navlogo"><img alt="Logo" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top filter-green"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
+            <ReactBootStrap.Navbar.Brand href="/multicargajym" className="navlogo"><img alt="Logo" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top filter-green"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
 
             <NavbarDropdown/>
 
