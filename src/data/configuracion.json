@@ -83,6 +83,12 @@
         "imagen": "img-carousel4.jpg",
         "alt": "nuestra empresa con sus colaboradores",
         "descripcion": "Empleados trabajando por ustedes"
+      },
+      {
+        "id": 5,
+        "imagen": "cargaPesadaconJose.jfif",
+        "alt": "Imagen Carga pesada con jose",
+        "descripcion": "Servicio de tramsporte de Carga de gran tamaño"
       }
 
     ]
