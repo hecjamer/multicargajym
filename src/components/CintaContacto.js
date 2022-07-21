@@ -2,6 +2,8 @@ import React from 'react';
 import './styles/CintaContacto.scss';
 import contacto from '../data/configuracion.json'
 
+
+
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 class CintaContacto extends React.Component {

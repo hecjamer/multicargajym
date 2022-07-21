@@ -1,39 +1,57 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import './styles/navbarDropdown.scss'
-
+import NavDropdownMenu from '../data/configuracion.json'
+import Modal from './Modal'
 
 
 function NavbarDropdown() {
-  const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
+
+  const [estadoModal1, cambiarestadoModal1] = useState(true);
 
   return (
-    <Nav variant="pills" activeKey="1" onSelect={handleSelect} className="NavbarDropdown">
 
-      <Nav.Item><Nav.Link eventKey="1" href="/" className="NavbarDropdown-NavLink">INICIO</Nav.Link></Nav.Item>
+    <Nav variant="pills" className="NavbarDropdown">
 
-      <NavDropdown title="nosotros" id="nav-dropdown">
-        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
+          {NavDropdownMenu.navbar.menus.map(navdropMenu => {
+            return (
+              <NavDropdown title={navdropMenu.nombre} id="nav-dropdown" key={navdropMenu.id}>
+                {navdropMenu.registro.map(item => {
+                  return (
+                    <div key={item.id}>
+                        <NavDropdown.Item href="" key={item.id}>{item.nombre}</NavDropdown.Item>
+                    </div>
 
-      <NavDropdown title="SERVICIOS" id="nav-dropdown">
-        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-
-      <Nav.Item><Nav.Link href="#action1" className="NavbarDropdown-NavLink">decretos</Nav.Link></Nav.Item>
-      <Nav.Item><Nav.Link href="#action1" className="NavbarDropdown-NavLink">cobertura</Nav.Link></Nav.Item>
+                  )
+                })}
+              </NavDropdown>
+            )
+          })}
 
     </Nav>
-  );
+
+  )
+
+  function modal() {
+
+    return (
+
+      <Modal estado={estadoModal1} cambiarEstado={cambiarestadoModal1}>
+        <h1>prueba modal</h1>
+        <h2>prueba childrem</h2>
+      </Modal>
+
+    )
+  }
+
+
+
+
+
 }
 
 export default NavbarDropdown;
+
+
+
