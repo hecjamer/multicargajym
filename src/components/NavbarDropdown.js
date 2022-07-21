@@ -28,7 +28,6 @@ function NavbarDropdown() {
 
                           <MyVerticallyCenteredModal show={modalShow} onHide={() => setModalShow(false)}/>
 
-
                     </div>
 
                   )
