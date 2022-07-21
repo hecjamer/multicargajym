@@ -3,12 +3,16 @@ import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import './styles/navbarDropdown.scss'
 import NavDropdownMenu from '../data/configuracion.json'
-import Modal from './Modal'
+
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import MyVerticallyCenteredModal from './MyVerticallyCenteredModal';
+
 
 
 function NavbarDropdown() {
 
-  const [estadoModal1, cambiarestadoModal1] = useState(true);
+  const [modalShow, setModalShow] = React.useState(false);
 
   return (
 
@@ -20,7 +24,11 @@ function NavbarDropdown() {
                 {navdropMenu.registro.map(item => {
                   return (
                     <div key={item.id}>
-                        <NavDropdown.Item href="" key={item.id}>{item.nombre}</NavDropdown.Item>
+                        <NavDropdown.Item href="" key={item.id} onClick={() => setModalShow(true)}>{item.nombre}</NavDropdown.Item>
+
+                          <MyVerticallyCenteredModal show={modalShow} onHide={() => setModalShow(false)}/>
+
+
                     </div>
 
                   )
@@ -32,22 +40,6 @@ function NavbarDropdown() {
     </Nav>
 
   )
-
-  function modal() {
-
-    return (
-
-      <Modal estado={estadoModal1} cambiarEstado={cambiarestadoModal1}>
-        <h1>prueba modal</h1>
-        <h2>prueba childrem</h2>
-      </Modal>
-
-    )
-  }
-
-
-
-
 
 }
 
