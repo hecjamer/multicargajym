@@ -3,6 +3,9 @@ import CintaContacto from './CintaContacto';
 import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
+import WhatsApp from './WhatsApp';
+
+
 
 
 function Layout (props) {
@@ -13,6 +16,7 @@ function Layout (props) {
       <Navbar />
       <Main/>
       <Footer/>
+      <WhatsApp/>
       {props.children}
     </React.Fragment>
   )
