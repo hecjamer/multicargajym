@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
 import navbarInfo from '../data/configuracion.json'
-// import logo from '../images/logo.svg'
+
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
