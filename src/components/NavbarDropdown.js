@@ -1,45 +1,39 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import './styles/navbarDropdown.scss'
-import NavDropdownMenu from '../data/configuracion.json'
-
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import MyVerticallyCenteredModal from './MyVerticallyCenteredModal';
 
 
 
 function NavbarDropdown() {
-
-  const [modalShow, setModalShow] = React.useState(false);
+  const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
 
   return (
+    <Nav variant="pills" activeKey="1" onSelect={handleSelect} className="NavbarDropdown">
 
-    <Nav variant="pills" className="NavbarDropdown">
+      <Nav.Item><Nav.Link eventKey="1" href="/" className="NavbarDropdown-NavLink">INICIO</Nav.Link></Nav.Item>
 
-          {NavDropdownMenu.navbar.menus.map(navdropMenu => {
-            return (
-              <NavDropdown title={navdropMenu.nombre} id="nav-dropdown" key={navdropMenu.id}>
-                {navdropMenu.registro.map(item => {
-                  return (
-                    <div key={item.id}>
-                        <NavDropdown.Item href="" key={item.id} onClick={() => setModalShow(true)}>{item.nombre}</NavDropdown.Item>
+      <NavDropdown title="nosotros" id="nav-dropdown">
+        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
 
-                          <MyVerticallyCenteredModal show={modalShow} onHide={() => setModalShow(false)}/>
+      <NavDropdown title="SERVICIOS" id="nav-dropdown">
+        <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.2">Another action</NavDropdown.Item>
+        <NavDropdown.Item eventKey="4.3">Something else here</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
+      </NavDropdown>
 
-                    </div>
-
-                  )
-                })}
-              </NavDropdown>
-            )
-          })}
+      <Nav.Item><Nav.Link href="#action1" className="NavbarDropdown-NavLink">decretos</Nav.Link></Nav.Item>
+      <Nav.Item><Nav.Link href="#action1" className="NavbarDropdown-NavLink">cobertura</Nav.Link></Nav.Item>
 
     </Nav>
-
-  )
-
+  );
 }
 
 export default NavbarDropdown;
