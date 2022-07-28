@@ -8,6 +8,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '../components/Layout';
 
 import Badges from '../pages/Badges';
+import ModalMision from '../pages/ModalMision';
 
 import NotFound from '../pages/NotFound';
 
@@ -17,8 +18,8 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Switch>
-            {/* <Route exact path="/Badges" component={Badges} />
-            <Route component={NotFound} /> */}
+            <Route exact path="/ModalMision" component={ModalMision} />
+            <Route component={NotFound} />
           </Switch>
         </Layout>
       </BrowserRouter>

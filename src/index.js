@@ -8,6 +8,7 @@ import './assets/css/app-foundation.css'
 import './global.scss';
 
 import App from './components/App';
+// import App from './pages/ModalMision';
 
 
   const contenedor = document.getElementById('app');
