@@ -333,15 +333,8 @@
   },
   "whatsApp": {
     "href": "https://api.whatsapp.com/send/?phone=573502395356&amp;text=%C2%A1Hola+Team+Multicarga!",
-    "position": "fixed",
-    "zIndex": 9,
-    "right": "2%",
-    "bottom": "8%",
     "color": "ffff",
-    "fontSize": "80px",
-    "backgroundColor": "#00e676",
-    "displayFlex": "flex"
-
+    "backgroundColor": "#00e676"
   }
 
 }
