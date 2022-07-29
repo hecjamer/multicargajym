@@ -37,25 +37,28 @@
     "nombre": "MULTICARGA",
     "logo": "logo.svg",
 
-    "menus": [
-      {
-        "id": 1,
+    "menus": {
+      "nosotros": {
         "nombre": "nosotros",
-        "registro": [
-          {
-            "id": 1,
-            "nombre": "mision"
-          },
-          {
-            "id": 2,
-            "nombre": "Vision"
-          }
-        ]
+        "mision": {
+            "nombre": "Mision",
+            "detalle": "Integración Logística Bujacargo es una empresa de servicios logísticos y de transporte, orientados a la solución confiable en el manejo y colocación de mercancía de sus clientes a nivel nacional, con efectividad, calidad y seguridad, aportando nuestra experiencia para beneficio de los clientes, nuestra gente, sus familias, la empresa y las personas que laboran en ella."
+        },
+        "valores": {
+            "nombre": "valores",
+            "valor1": "Etica",
+            "valor2": "Respeto",
+            "valor3": "cooperación",
+            "valor4": "Profesionalismo",
+            "valor5": "Compromiso Social",
+            "valor6": "Participación"
+
+        }
+
       }
 
 
-
-    ]
+    }
 
     },
   "carousel": {

@@ -1,0 +1,140 @@
+.modal-dialog-centered{
+
+  .modal-content {
+
+    .modal-header{
+
+      background-color: red;
+      border-radius: 1% 1% 10% 10%;
+
+    }
+
+    .modal-body {
+
+    }
+
+    .modal-footer {
+      background-color: red;
+      border-radius: 80% 80% 1% 1%;
+
+    }
+
+  }
+
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .modal-dialog-centered{
+    max-width: 95vw;
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .modal-dialog-centered{
+    max-width: 80vw;
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+
+}
+
+@media (min-width: 769px) {
+
+  .modal-dialog-centered{
+    max-width: 60vw;
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+
+@media (min-width: 992px) {
+
+  .modal-dialog-centered{
+    max-width: 40vw;
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+
+
+}
+
+

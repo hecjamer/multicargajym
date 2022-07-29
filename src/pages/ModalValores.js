@@ -22,9 +22,7 @@ function ModalMision(props) {
           consectetur ac, vestibulum at eros.
         </p>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
+      <Modal.Footer></Modal.Footer>
     </Modal>
   );
 }
