@@ -19,7 +19,7 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/ModalMision" component={ModalMision} />
-            <Route component={NotFound} />
+            {/* <Route component={NotFound} /> */}
           </Switch>
         </Layout>
       </BrowserRouter>
