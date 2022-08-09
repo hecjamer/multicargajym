@@ -12,9 +12,12 @@ import ModalMision from '../pages/ModalMision';
 
 import NotFound from '../pages/NotFound';
 
-function App() {
-  return (
 
+
+
+function App() {
+
+  return (
       <BrowserRouter>
         <Layout>
           <Switch>

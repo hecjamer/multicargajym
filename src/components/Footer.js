@@ -1,40 +1,42 @@
-import React, {useState, useEffect} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import './styles/footer.scss';
 import RedesSociales from './RedesSociales';
 // import datosFooter from '../data/configuracion.json';
+import { DataContext } from '../DataContext';
 
 
 function Footer() {
+  const { configuracion } = useContext( DataContext );
 
-  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  const [datosFooter, setTodos] = useState()
+  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  // const [configuracion, setTodos] = useState()
 
-  const fetchApi = async () => {
-    const response = await fetch(url)
-    const responseJSON = await response.json()
-    setTodos(responseJSON)
-  }
+  // const fetchApi = async () => {
+  //   const response = await fetch(url)
+  //   const responseJSON = await response.json()
+  //   setTodos(responseJSON)
+  // }
 
-  useEffect(() => {
-    fetchApi();
+  // useEffect(() => {
+  //   fetchApi();
 
-  }, [])
+  // }, [])
 
 
     return (
       <>
-      { !datosFooter ? 'Cargando...' :
+      { !configuracion ? 'Cargando...' :
       <div className="container-fluid footer-contenedor-fluid">
           <div className="row footerTop">
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-ms-12 left">
-                <h4>{datosFooter.footer.propuestaValor.titulo}</h4>
-                <p>{datosFooter.footer.propuestaValor.detalle}</p>
+                <h4>{configuracion.footer.propuestaValor.titulo}</h4>
+                <p>{configuracion.footer.propuestaValor.detalle}</p>
               </div>
 
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-ms-12 center">
-                <h4>{datosFooter.footer.nuestrosServicios.nombre}</h4>
+                <h4>{configuracion.footer.nuestrosServicios.nombre}</h4>
                 <ul>
-                  {datosFooter.footer.nuestrosServicios.servicios.map(servicios => {
+                  {configuracion.footer.nuestrosServicios.servicios.map(servicios => {
                     return (
                       <div key={servicios.id}>
                         <li>
@@ -51,9 +53,9 @@ function Footer() {
               </div>
 
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-ms-12 right">
-                <h4>{datosFooter.footer.contactanos.nombre}</h4>
+                <h4>{configuracion.footer.contactanos.nombre}</h4>
                 <ul>
-                  {datosFooter.footer.contactanos.comunicaciones.map(comunicaciones => {
+                  {configuracion.footer.contactanos.comunicaciones.map(comunicaciones => {
                     return (
                       <div key={comunicaciones.id}>
                         <li>
@@ -72,8 +74,8 @@ function Footer() {
 
           <div className="row footerBootom">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 left">
-              <i className={datosFooter.footer.derechosyRedes.icono}></i>
-              <h6>{datosFooter.footer.derechosyRedes.derechos}</h6>
+              <i className={configuracion.footer.derechosyRedes.icono}></i>
+              <h6>{configuracion.footer.derechosyRedes.derechos}</h6>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 right"><RedesSociales /></div>
           </div>

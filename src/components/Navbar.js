@@ -1,38 +1,40 @@
-import React, {useState, useEffect} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
 // import navbarInfo from '../data/configuracion.json'
+import { DataContext } from '../DataContext';
 
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 function Navbar() {
+  const { configuracion } = useContext( DataContext );
 
-  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  const [navbarInfo, setTodos] = useState()
+  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  // const [configuracion, setTodos] = useState()
 
-  const fetchApi = async () => {
-    const response = await fetch(url)
-    const responseJSON = await response.json()
-    setTodos(responseJSON)
-  }
+  // const fetchApi = async () => {
+  //   const response = await fetch(url)
+  //   const responseJSON = await response.json()
+  //   setTodos(responseJSON)
+  // }
 
-  useEffect(() => {
-    fetchApi();
+  // useEffect(() => {
+  //   fetchApi();
 
-  }, [])
+  // }, [])
 
 
 
   return (
     <>
-      { !navbarInfo ? 'Cargando...' :
+      { !configuracion ? 'Cargando...' :
         <div className="sticky-top">
 
           <ReactBootStrap.Navbar collapseOnSelect expand="lg">
               <ReactBootStrap.Container fluid>
 
-                <ReactBootStrap.Navbar.Brand href="/multicargajym" className="navlogo"><img alt="Logo" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top filter-green"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
+                <ReactBootStrap.Navbar.Brand href="/multicargajym" className="navlogo"><img alt="Logo" src={require(`../images/${configuracion.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top filter-green"/>{' '} {configuracion.navbar.nombre} </ReactBootStrap.Navbar.Brand>
 
                 <NavbarDropdown/>
 

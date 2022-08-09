@@ -1,30 +1,34 @@
-import React, {useState, useEffect} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './styles/componentCarousel.scss';
 // import { useState } from "react";
 // import configuracion from '../data/configuracion.json';
+import { DataContext } from '../DataContext';
 
 
 function ComponentCarousel() {
+
+  const { configuracion } = useContext( DataContext );
+
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
-  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  const [configuracion, setTodos] = useState();
+  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  // const [configuracion, setTodos] = useState();
 
-  const fetchApi = async () => {
-    const response = await fetch(url)
-    const responseJSON = await response.json()
-    setTodos(responseJSON)
-  }
+  // const fetchApi = async () => {
+  //   const response = await fetch(url)
+  //   const responseJSON = await response.json()
+  //   setTodos(responseJSON)
+  // }
 
-  useEffect(() => {
-    fetchApi();
+  // useEffect(() => {
+  //   fetchApi();
 
-  }, [])
+  // }, [])
 
 
   return (

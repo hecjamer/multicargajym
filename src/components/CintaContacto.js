@@ -1,42 +1,43 @@
-import React, {useState, useEffect} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import './styles/CintaContacto.scss';
 // import contacto from '../data/configuracion.json'
-
-
+import { DataContext } from '../DataContext';
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 function CintaContacto() {
 
-  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  const [contacto, setTodos] = useState()
+  const { configuracion } = useContext( DataContext );
 
-  const fetchApi = async () => {
-    const response = await fetch(url)
-    const responseJSON = await response.json()
-    setTodos(responseJSON)
-  }
+  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  // const [configuracion, setTodos] = useState()
 
-  useEffect(() => {
-    fetchApi();
+  // const fetchApi = async () => {
+  //   const response = await fetch(url)
+  //   const responseJSON = await response.json()
+  //   setTodos(responseJSON)
+  // }
 
-  }, [])
+  // useEffect(() => {
+  //   fetchApi();
+
+  // }, [])
 
   return (
     <div className="container-fuild cintaContacto">
-      { !contacto ? 'Cargando...' :
+      { !configuracion ? 'Cargando...' :
         <div className="row">
           <div className="col-lg-8 col-sm-12 cintaContacto-Contactenos">
             <div className="row">
-              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{contacto.contacto.telefono}</a></div>
-              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{contacto.contacto.celular}</a></div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href="mailto:logistica.bujacargo.jm@gmail.com"><i className="fi-mail"></i>{contacto.contacto.email}</a></div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-marker"></i>{contacto.contacto.direccion}</a></div>
+              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{configuracion.contacto.telefono}</a></div>
+              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{configuracion.contacto.celular}</a></div>
+              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href="mailto:logistica.bujacargo.jm@gmail.com"><i className="fi-mail"></i>{configuracion.contacto.email}</a></div>
+              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-marker"></i>{configuracion.contacto.direccion}</a></div>
             </div>
           </div>
           <div className="col-lg-4 col-sm-12 cintaContacto-redesSociales">
             <div className="row">
-              {contacto.contacto.redesSociales.map(redes => {
+              {configuracion.contacto.redesSociales.map(redes => {
                 return (
                   <div className={redes.col} key={redes.id}><a href={redes.href} className={redes.className}></a></div>
                 )
