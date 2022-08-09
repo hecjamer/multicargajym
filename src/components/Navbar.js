@@ -1,45 +1,64 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
-import navbarInfo from '../data/configuracion.json'
+// import navbarInfo from '../data/configuracion.json'
 
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
 function Navbar() {
+
+  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  const [navbarInfo, setTodos] = useState()
+
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON)
+  }
+
+  useEffect(() => {
+    fetchApi();
+
+  }, [])
+
+
+
   return (
-    <div className="sticky-top">
+    <>
+      { !navbarInfo ? 'Cargando...' :
+        <div className="sticky-top">
 
-      <ReactBootStrap.Navbar collapseOnSelect expand="lg">
-          <ReactBootStrap.Container fluid>
+          <ReactBootStrap.Navbar collapseOnSelect expand="lg">
+              <ReactBootStrap.Container fluid>
 
-            <ReactBootStrap.Navbar.Brand href="/multicargajym" className="navlogo"><img alt="Logo" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top filter-green"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
+                <ReactBootStrap.Navbar.Brand href="/multicargajym" className="navlogo"><img alt="Logo" src={require(`../images/${navbarInfo.navbar.logo}`)} width="40" height="40" className="d-inline-block align-top filter-green"/>{' '} {navbarInfo.navbar.nombre} </ReactBootStrap.Navbar.Brand>
 
-            <NavbarDropdown/>
+                <NavbarDropdown/>
 
-            <ReactBootStrap.Navbar.Toggle aria-controls="offcanvasNavbar" />
+                <ReactBootStrap.Navbar.Toggle aria-controls="offcanvasNavbar" />
 
-            <ReactBootStrap.Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
-              <ReactBootStrap.Offcanvas.Header closeButton>
-                <ReactBootStrap.Offcanvas.Title id="offcanvasNavbarLabel"></ReactBootStrap.Offcanvas.Title>
-              </ReactBootStrap.Offcanvas.Header>
+                <ReactBootStrap.Navbar.Offcanvas id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
+                  <ReactBootStrap.Offcanvas.Header closeButton>
+                    <ReactBootStrap.Offcanvas.Title id="offcanvasNavbarLabel"></ReactBootStrap.Offcanvas.Title>
+                  </ReactBootStrap.Offcanvas.Header>
 
-              <ReactBootStrap.Offcanvas.Body className="Offcanvas-Body">
+                  <ReactBootStrap.Offcanvas.Body className="Offcanvas-Body">
 
-                <ReactBootStrap.Nav className="justify-content-end flex-grow-1 pe-3">
+                    <ReactBootStrap.Nav className="justify-content-end flex-grow-1 pe-3">
 
-                </ReactBootStrap.Nav>
+                    </ReactBootStrap.Nav>
 
-              </ReactBootStrap.Offcanvas.Body>
+                  </ReactBootStrap.Offcanvas.Body>
 
-            </ReactBootStrap.Navbar.Offcanvas>
+                </ReactBootStrap.Navbar.Offcanvas>
 
-          </ReactBootStrap.Container>
-      </ReactBootStrap.Navbar>
+              </ReactBootStrap.Container>
+          </ReactBootStrap.Navbar>
 
-
-
-    </div>
+        </div>
+      }
+    </>
   );
 }
 

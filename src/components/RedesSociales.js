@@ -1,14 +1,31 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 // import './styles/CintaContacto.scss';
 import './styles/redesSociales.scss';
-import contacto from '../data/configuracion.json'
+// import contacto from '../data/configuracion.json'
 
 // import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
-class RedesSociales extends React.Component {
-  render() {
+function RedesSociales() {
+
+  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  const [contacto, setTodos] = useState()
+
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON)
+  }
+
+  useEffect(() => {
+    fetchApi();
+
+  }, [])
+
+
     return (
-        <div className="row redesSociales-container">
+      <>
+        { !contacto ? 'Cargando...' :
+          <div className="row redesSociales-container">
             {contacto.contacto.redesSociales.map(redes => {
               return (
                 <div className={redes.col} key={redes.id}>
@@ -16,9 +33,11 @@ class RedesSociales extends React.Component {
                 </div>
               )
             })}
-        </div>
+          </div>
+        }
+      </>
     )
-  }
+
 }
 
 export default RedesSociales;

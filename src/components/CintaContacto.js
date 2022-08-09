@@ -1,15 +1,30 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles/CintaContacto.scss';
-import contacto from '../data/configuracion.json'
+// import contacto from '../data/configuracion.json'
 
 
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
-class CintaContacto extends React.Component {
-  render() {
-    return (
-      <div className="container-fuild cintaContacto">
+function CintaContacto() {
+
+  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  const [contacto, setTodos] = useState()
+
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON)
+  }
+
+  useEffect(() => {
+    fetchApi();
+
+  }, [])
+
+  return (
+    <div className="container-fuild cintaContacto">
+      { !contacto ? 'Cargando...' :
         <div className="row">
           <div className="col-lg-8 col-sm-12 cintaContacto-Contactenos">
             <div className="row">
@@ -29,13 +44,13 @@ class CintaContacto extends React.Component {
             </div>
           </div>
         </div>
+      }
+    </div>
 
-      </div>
 
+  )
 
-    )
-
-  }
 }
 
 export default CintaContacto;
+

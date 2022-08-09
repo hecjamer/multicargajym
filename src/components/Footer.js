@@ -1,12 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './styles/footer.scss';
-import datosFooter from '../data/configuracion.json';
 import RedesSociales from './RedesSociales';
+// import datosFooter from '../data/configuracion.json';
 
 
-class Footer extends React.Component {
-  render() {
+function Footer() {
+
+  const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+  const [datosFooter, setTodos] = useState()
+
+  const fetchApi = async () => {
+    const response = await fetch(url)
+    const responseJSON = await response.json()
+    setTodos(responseJSON)
+  }
+
+  useEffect(() => {
+    fetchApi();
+
+  }, [])
+
+
     return (
+      <>
+      { !datosFooter ? 'Cargando...' :
       <div className="container-fluid footer-contenedor-fluid">
           <div className="row footerTop">
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-ms-12 left">
@@ -61,8 +78,10 @@ class Footer extends React.Component {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 right"><RedesSociales /></div>
           </div>
       </div>
+     }
+     </>
     )
-  }
+
 }
 
 export default Footer;
