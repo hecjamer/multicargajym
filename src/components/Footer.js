@@ -1,27 +1,11 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext} from 'react';
 import './styles/footer.scss';
 import RedesSociales from './RedesSociales';
-// import datosFooter from '../data/configuracion.json';
 import { DataContext } from '../DataContext';
 
 
 function Footer() {
   const { configuracion } = useContext( DataContext );
-
-  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  // const [configuracion, setTodos] = useState()
-
-  // const fetchApi = async () => {
-  //   const response = await fetch(url)
-  //   const responseJSON = await response.json()
-  //   setTodos(responseJSON)
-  // }
-
-  // useEffect(() => {
-  //   fetchApi();
-
-  // }, [])
-
 
     return (
       <>

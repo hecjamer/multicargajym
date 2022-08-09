@@ -1,6 +1,5 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext} from 'react';
 import './styles/CintaContacto.scss';
-// import contacto from '../data/configuracion.json'
 import { DataContext } from '../DataContext';
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
@@ -8,21 +7,6 @@ import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStra
 function CintaContacto() {
 
   const { configuracion } = useContext( DataContext );
-
-  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  // const [configuracion, setTodos] = useState()
-
-  // const fetchApi = async () => {
-  //   const response = await fetch(url)
-  //   const responseJSON = await response.json()
-  //   setTodos(responseJSON)
-  // }
-
-  // useEffect(() => {
-  //   fetchApi();
-
-  // }, [])
-
   return (
     <div className="container-fuild cintaContacto">
       { !configuracion ? 'Cargando...' :

@@ -6,11 +6,7 @@ import Footer from './Footer';
 import WhatsApp from './WhatsApp';
 import {DataProvider} from '../DataContext';
 
-
-
-
 function Layout (props) {
-  // const children = props.children;
   return (
     <DataProvider>
       <React.Fragment>

@@ -1,7 +1,6 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext} from 'react';
 import NavbarDropdown from './NavbarDropdown';
 import './styles/navbar.scss';
-// import navbarInfo from '../data/configuracion.json'
 import { DataContext } from '../DataContext';
 
 
@@ -9,22 +8,6 @@ import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStra
 
 function Navbar() {
   const { configuracion } = useContext( DataContext );
-
-  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  // const [configuracion, setTodos] = useState()
-
-  // const fetchApi = async () => {
-  //   const response = await fetch(url)
-  //   const responseJSON = await response.json()
-  //   setTodos(responseJSON)
-  // }
-
-  // useEffect(() => {
-  //   fetchApi();
-
-  // }, [])
-
-
 
   return (
     <>

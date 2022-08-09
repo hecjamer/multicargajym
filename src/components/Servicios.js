@@ -1,26 +1,10 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext} from 'react';
 import './styles/servicios.scss'
-// import configuracion from '../data/configuracion.json'
 import { DataContext } from '../DataContext';
 
 function Servicios() {
 
   const { configuracion } = useContext( DataContext );
-
-
-  // const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
-  // const [configuracion, setTodos] = useState()
-
-  // const fetchApi = async () => {
-  //   const response = await fetch(url)
-  //   const responseJSON = await response.json()
-  //   setTodos(responseJSON)
-  // }
-
-  // useEffect(() => {
-  //   fetchApi();
-
-  // }, [])
 
     return (
       <>

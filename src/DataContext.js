@@ -21,12 +21,9 @@ export const DataProvider = ( { children }) => {
     }, [])
 
   return (
-
     <DataContext.Provider value={{configuracion, setTodos}}>
-
       { children }
     </DataContext.Provider>
-
   )
 
 
