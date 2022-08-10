@@ -8,8 +8,6 @@ function Footer() {
   const { configuracion } = useContext( DataContext );
 
     return (
-      <>
-      { !configuracion ? 'Cargando...' :
       <div className="container-fluid footer-contenedor-fluid">
           <div className="row footerTop">
               <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-ms-12 left">
@@ -64,9 +62,7 @@ function Footer() {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 right"><RedesSociales /></div>
           </div>
       </div>
-     }
-     </>
-    )
+     )
 
 }
 

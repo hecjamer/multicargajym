@@ -7,22 +7,17 @@ function WhatsApp() {
   const { configuracion } = useContext( DataContext );
 
     return (
-      <>
-        { !configuracion ? 'Cargando...' :
-          <div className="divWhatsApp">
-            <a href={configuracion.whatsApp.href} target="_blank" rel="noopener noreferrer">
-              <i className="bi bi-whatsapp " style={{
-                color: `${configuracion.whatsApp.color}`,
-                backgroundColor: `${configuracion.whatsApp.backgroundColor}`
+      <div className="divWhatsApp">
+        <a href={configuracion.whatsApp.href} target="_blank" rel="noopener noreferrer">
+          <i className="bi bi-whatsapp " style={{
+            color: `${configuracion.whatsApp.color}`,
+            backgroundColor: `${configuracion.whatsApp.backgroundColor}`
 
-                }} >
-              </i>
-            </a>
-          </div>
-        }
-      </>
-
-  )
+            }} >
+          </i>
+        </a>
+      </div>
+    )
 
 }
 

@@ -10,8 +10,6 @@ function Navbar() {
   const { configuracion } = useContext( DataContext );
 
   return (
-    <>
-      { !configuracion ? 'Cargando...' :
         <div className="sticky-top">
 
           <ReactBootStrap.Navbar collapseOnSelect expand="lg">
@@ -42,8 +40,6 @@ function Navbar() {
           </ReactBootStrap.Navbar>
 
         </div>
-      }
-    </>
   );
 }
 

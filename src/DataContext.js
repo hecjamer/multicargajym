@@ -5,7 +5,7 @@ export const DataContext = createContext();
 export const DataProvider = ( { children }) => {
 
 
-    const url = "https://benjumeacarlos981.github.io/multicarga/original.json";
+    const url = "https://benjumeacarlos981.github.io/multicarga/configuracion.json";
 
     const [configuracion, setTodos] = useState()
 
@@ -21,9 +21,13 @@ export const DataProvider = ( { children }) => {
     }, [])
 
   return (
-    <DataContext.Provider value={{configuracion, setTodos}}>
-      { children }
-    </DataContext.Provider>
+    <>
+      { !configuracion ? 'Cargando...' :
+      <DataContext.Provider value={{configuracion, setTodos}}>
+        { children }
+      </DataContext.Provider>
+      }
+    </>
   )
 
 

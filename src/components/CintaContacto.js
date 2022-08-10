@@ -20,7 +20,7 @@ function CintaContacto() {
             </div>
           </div>
           <div className="col-lg-4 col-sm-12 cintaContacto-redesSociales">
-            <div className="row">
+            <div className="row redes">
               {configuracion.contacto.redesSociales.map(redes => {
                 return (
                   <div className={redes.col} key={redes.id}><a href={redes.href} className={redes.className}></a></div>
