@@ -21,7 +21,9 @@ function ComponentCarousel() {
               {configuracion.carousel.diapositivas.map(detalle => {
                 return (
                   <Carousel.Item key={detalle.id}>
-                    <img className="d-block w-100" src={require(`../images/${detalle.imagen}`)} alt={detalle.alt}/>
+                    {/* <img className="d-block w-100" src={require(`../images/${detalle.imagen}`)} alt={detalle.alt}/> */}
+                    <img className="d-block w-100" src={(`https://benjumeacarlos981.github.io/multicarga/${detalle.imagen}`)} alt={detalle.alt}/>
+
                     <Carousel.Caption>
                       <h3>{detalle.descripcion}</h3>
                     </Carousel.Caption>
