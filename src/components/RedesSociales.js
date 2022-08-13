@@ -12,7 +12,7 @@ function RedesSociales() {
         {configuracion.contacto.redesSociales.map(redes => {
           return (
             <div className={redes.col} key={redes.id}>
-              <a href={redes.href} className={redes.className}>""</a>
+              <a href={redes.href} className={redes.className}></a>
             </div>
           )
         })}

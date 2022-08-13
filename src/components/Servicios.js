@@ -16,7 +16,8 @@ function Servicios() {
             <div className="row cont-card">
                   {configuracion.servicios.card.map(detalle => (
                     <div className="element-card" key={detalle.id}>
-                      <div className="card-imagen" style={{backgroundImage: `url(${require(`../images/${detalle.imagen}`)})`}}></div>
+                      {/* <div className="card-imagen" style={{backgroundImage: `url(${require(`../images/${detalle.imagen}`)})`}}></div> */}
+                      <div className="card-imagen" style={{backgroundImage: `url(${(`${configuracion.img.linkImg}${detalle.imagen}`)})`}}></div>
                       <div className="element-card-text">
                         <h2 style={{fontSize: `${detalle.tamanoletraH2}`}}>{detalle.titulo}</h2>
                         <p style={{fontSize: `${detalle.tamanoletraP}`}}>{detalle.descripcion}</p>

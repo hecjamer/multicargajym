@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import './styles/CintaContacto.scss';
 import { DataContext } from '../DataContext';
+import RedesSociales from './RedesSociales';
 
 import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStrap
 
@@ -9,7 +10,6 @@ function CintaContacto() {
   const { configuracion } = useContext( DataContext );
   return (
     <div className="container-fuild cintaContacto">
-      { !configuracion ? 'Cargando...' :
         <div className="row">
           <div className="col-lg-8 col-sm-12 cintaContacto-Contactenos">
             <div className="row">
@@ -20,16 +20,16 @@ function CintaContacto() {
             </div>
           </div>
           <div className="col-lg-4 col-sm-12 cintaContacto-redesSociales">
-            <div className="row redes">
+            <RedesSociales />
+            {/* <div className="row redes">
               {configuracion.contacto.redesSociales.map(redes => {
                 return (
                   <div className={redes.col} key={redes.id}><a href={redes.href} className={redes.className}></a></div>
                 )
               })}
-            </div>
+            </div> */}
           </div>
         </div>
-      }
     </div>
 
 

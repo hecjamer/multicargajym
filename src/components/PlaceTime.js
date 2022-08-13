@@ -9,7 +9,9 @@ function PlaceTime() {
         <div className="container-fluid placeTime-contenedor-fluid">
           <div className="row">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 col-left">
-              <img src={require(`../images/${configuracion.PlaceTime.url}`)} alt="" />
+              {/* <img src={require(`../images/${configuracion.PlaceTime.url}`)} alt="" /> */}
+              <img src={(`${configuracion.img.linkImg}${configuracion.PlaceTime.url}`)} alt="" />
+
             </div>
 
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 col-right">
