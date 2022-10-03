@@ -9,16 +9,6 @@ import * as ReactBootStrap from "react-bootstrap"; // extension de ReactBootStra
 function Navbar() {
   const { configuracion } = useContext( DataContext );
 
-
-
-
-
-
-
-
-
-
-
   return (
         <div className="sticky-top">
 

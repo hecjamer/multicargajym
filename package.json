@@ -1,5 +1,5 @@
 {
-  "homepage": "https://hecjamer.github.io/bujacargo/",
+  "homepage": "https://multicargajym.com/",
   "name": "Multicarga",
   "version": "0.1.0",
   "private": true,
@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && echo multicargajym.com > ./build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

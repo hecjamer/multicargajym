@@ -7,23 +7,30 @@ export const DataProvider = ( { children }) => {
 
     const url = "https://benjumeacarlos981.github.io/multicarga/configuracion.json";
 
-    const [configuracion, setTodos] = useState()
+    const [configuracion, setConfiguracion] = useState()
 
     const fetchApi = async () => {
       const response = await fetch(url)
       const responseJSON = await response.json()
-      setTodos(responseJSON)
+      setConfiguracion(responseJSON)
     }
 
     useEffect(() => {
       fetchApi();
 
-    }, [])
+    }, [configuracion])
 
   return (
     <>
       { !configuracion ? 'Cargando...' :
-      <DataContext.Provider value={{configuracion, setTodos}}>
+      <DataContext.Provider value={
+        {
+          configuracion,
+          setConfiguracion
+        }
+      }
+    >
+
         { children }
       </DataContext.Provider>
       }
