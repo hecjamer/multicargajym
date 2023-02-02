@@ -1,9 +1,11 @@
+import React, {useContext} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import '../pages/styles/modalMision.scss';
-import menu from '../data/configuracion.json';
+import { DataContext } from '../DataContext';
 
 function ModalMision(props) {
+  const { configuracion } = useContext( DataContext );
   return (
     <Modal className="prueba"
       {...props}
@@ -12,10 +14,10 @@ function ModalMision(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">{menu.navbar.menus.nosotros.mision.nombre}</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">{configuracion.navbar.menus.nosotros.mision.nombre}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>{menu.navbar.menus.nosotros.mision.detalle}</p>
+        <p>{configuracion.navbar.menus.nosotros.mision.detalle}</p>
       </Modal.Body>
       <Modal.Footer>
 

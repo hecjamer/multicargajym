@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Main from './Main';
 import Footer from './Footer';
 import WhatsApp from './WhatsApp';
+import TelefonoApp from './TelefonoApp';
 import {DataProvider} from '../DataContext';
 
 function Layout (props) {
@@ -14,6 +15,7 @@ function Layout (props) {
         <Navbar />
         <Main/>
         <Footer/>
+        <TelefonoApp/>
         <WhatsApp/>
         {props.children}
       </React.Fragment>

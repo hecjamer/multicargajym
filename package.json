@@ -24,6 +24,7 @@
   "scripts": {
     "predeploy": "npm run build && echo multicargajym.com > ./build/CNAME",
     "deploy": "gh-pages -d build",
+    "subir": "npm-run-all -p predeploy deploy",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

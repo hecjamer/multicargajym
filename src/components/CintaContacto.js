@@ -13,8 +13,8 @@ function CintaContacto() {
         <div className="row">
           <div className="col-lg-8 col-sm-12 cintaContacto-Contactenos">
             <div className="row">
-              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{configuracion.contacto.telefono}</a></div>
-              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-telephone"></i>{configuracion.contacto.celular}</a></div>
+              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href={`tel:${configuracion.contacto.telefono}`}><i className="fi-telephone"></i>{configuracion.contacto.telefono}</a></div>
+              <div className="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href={`tel:${configuracion.contacto.celular}`}><i className="fi-telephone"></i>{configuracion.contacto.celular}</a></div>
               <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href="mailto:logistica.bujacargo.jm@gmail.com"><i className="fi-mail"></i>{configuracion.contacto.email}</a></div>
               <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-ms-12 cintaContacto-Contactenos-element"><a href=""><i className="fi-marker"></i>{configuracion.contacto.direccion}</a></div>
             </div>
