@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import '../pages/styles/modales.scss';
 import '../pages/styles/modalMision.scss';
 import { DataContext } from '../DataContext';
 
