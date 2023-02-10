@@ -13,6 +13,7 @@ function ModalMision(props) {
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
+      className="modalMision"
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">{configuracion.navbar.menus.nosotros.mision.nombre}</Modal.Title>

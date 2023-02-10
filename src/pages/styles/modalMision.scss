@@ -1,110 +1,98 @@
 
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
 
-@media (max-width: 768px) {
+  .modalMision {
 
-  .modal-dialog-centered{
-    max-width: 95vw;
+    .modal-dialog-centered{
+      max-width: 95vw;
 
-    .modal-content {
 
-      .modal-header{
+      .modal-content {
 
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+
+
+        }
+
+        .modal-footer {
+
+        }
 
       }
 
-      .modal-body {
-
-      }
-
-      .modal-footer {
-
-      }
 
     }
-
-
-  }
-
-
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  .modal-dialog-centered{
-    max-width: 80vw;
-
-    .modal-content {
-
-      .modal-header{
-
-
-      }
-
-      .modal-body {
-
-      }
-
-      .modal-footer {
-
-      }
-
-    }
-
-
   }
 
 }
 
-@media (min-width: 769px) {
+@media (min-width:481px)  {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640
+  wide. */
 
-  .modal-dialog-centered{
-    max-width: 60vw;
+  .modalMision {
 
-    .modal-content {
+    .modal-dialog-centered{
+      max-width: 95vw;
 
-      .modal-header{
+      .modal-content {
 
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
 
       }
 
-      .modal-body {
-
-      }
-
-      .modal-footer {
-
-      }
 
     }
-
 
   }
 
-
 }
+@media (min-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers,
+  landscape 800x480 or 854x480 phones */
+
+  .modalMision {
+
+    .modal-dialog-centered{
+      max-width: 65vw;
+
+      .modal-content {
+
+        .modal-header{
 
 
-@media (min-width: 992px) {
+        }
 
-  .modal-dialog-centered{
-    max-width: 40vw;
+        .modal-body {
 
-    .modal-content {
+        }
 
-      .modal-header{
+        .modal-footer {
 
+        }
 
       }
 
-      .modal-body {
-
-      }
-
-      .modal-footer {
-
-      }
 
     }
-
 
   }
 
@@ -112,3 +100,90 @@
 }
 
 
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .modalMision {
+
+    .modal-dialog-centered{
+      max-width: 60vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
+}
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .modalMision {
+
+    .modal-dialog-centered {
+      max-width: 60vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
+}
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  .modalMision {
+
+    .modal-dialog-centered {
+      max-width: 30vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
+}

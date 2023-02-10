@@ -23,3 +23,166 @@
 
 
 }
+
+
+
+
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .modal-dialog-centered{
+    /* background-color:yellow; */
+
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+}
+@media (min-width:481px)  {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640
+  wide. */
+  .modal-dialog-centered{
+    /* background-color:blue; */
+
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+}
+@media (min-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers,
+  landscape 800x480 or 854x480 phones */
+  .modal-dialog-centered{
+    /* background-color:red; */
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+}
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .modal-dialog-centered{
+    /* background-color:rgb(255, 0, 157); */
+
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+}
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .modal-dialog-centered{
+    /* background-color:rgb(129, 56, 8); */
+
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+}
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  .modal-dialog-centered{
+    /* background-color:rgb(19, 248, 198); */
+
+
+    .modal-content {
+
+      .modal-header{
+
+
+      }
+
+      .modal-body {
+
+      }
+
+      .modal-footer {
+
+      }
+
+    }
+
+
+  }
+}

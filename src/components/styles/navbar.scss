@@ -45,6 +45,16 @@
 }
 
 
+.Offcanvas-Body {
+  background-color:#151718;
+  .NavbarDropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+}
+
+
 
 @media (max-width: 768px) {
 

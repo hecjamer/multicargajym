@@ -1,101 +1,194 @@
-.modalValores {
-  background-color:#2bff0000;
 
-
-}
-
-@media (max-width: 768px) {
-
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
 
   .modalValores {
 
     .modal-dialog-centered {
+      max-width: 95vw;
+
 
       .modal-content {
 
-        .modal-header {
+        .modal-header{
+
 
         }
-        .modal-body {
-          .container {
-            .modal-valores-list-ul {
-              margin: 0px;
-              li {
-                display: flex;
-                gap: 10px;
 
-                i {
-                  color:green;
-                }
-              }
+        .modal-body {
+
+          ul {
+            li {
+              display: flex;
+              gap: 10px;
             }
           }
 
         }
+
         .modal-footer {
 
         }
 
       }
+
+
     }
   }
 
-
-
-
-
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
-
-
-}
-
-@media (min-width: 769px) {
-
-
-
-
-}
-
-
-@media (min-width: 992px) {
+@media (min-width:481px)  {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640
+  wide. */
 
   .modalValores {
 
-    .modal-dialog-centered {
+    .modal-dialog-centered{
+      max-width: 60vw;
 
       .modal-content {
 
-        .modal-header {
+        .modal-header{
+
 
         }
+
         .modal-body {
-          .container {
-            .modal-valores-list-ul {
-              li {
-                display: flex;
-                gap: 10px;
-
-                i {
-                  color:green;
-                }
-              }
-            }
-          }
 
         }
+
         .modal-footer {
 
         }
 
       }
+
+
     }
+
   }
 
+}
+@media (min-width:641px)  {
+  /* portrait tablets, portrait iPad, landscape e-readers,
+  landscape 800x480 or 854x480 phones */
 
+  .modalValores {
+
+    .modal-dialog-centered{
+      max-width: 65vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
 
 
 }
 
 
+@media (min-width:961px)  {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .modalValores {
+
+    .modal-dialog-centered {
+      max-width: 60vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
+}
+@media (min-width:1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .modalValores {
+
+    .modal-dialog-centered {
+      max-width: 60vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
+}
+@media (min-width:1281px) {
+  /* hi-res laptops and desktops */
+  .modalValores {
+
+    .modal-dialog-centered {
+      max-width: 30vw;
+
+      .modal-content {
+
+        .modal-header{
+
+
+        }
+
+        .modal-body {
+
+        }
+
+        .modal-footer {
+
+        }
+
+      }
+
+
+    }
+
+  }
+}
