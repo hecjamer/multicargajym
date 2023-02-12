@@ -33,9 +33,8 @@ function ComponentCarousel() {
                           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-ms-12 textCarouselRight">
                             <h1>{configuracion.carousel.tituloPrincipalH1}</h1>
                             <p>{configuracion.carousel.tituloPrincipalP}</p>
-                            <a href="https://hecjamer.github.io/multicargajym/" className="btn btn-outline-light">{configuracion.carousel.tituloPrincipalA}</a>
-                            <button type="button" className="btn">{configuracion.carousel.tituloPrincipalBTN}</button>
-
+                            <a href={configuracion.carousel.hrefPrincipalA} className="btn btn-outline-light" target="_blank">{configuracion.carousel.tituloPrincipalA}</a>
+                            <a href={configuracion.carousel.hrefPrincipalBTN} id="a_button" className="btn" target="_blank">{configuracion.carousel.tituloPrincipalBTN}</a>
                           </div>
                         </div>
                       </div>
