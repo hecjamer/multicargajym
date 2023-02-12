@@ -5,8 +5,9 @@ import './styles/navbarDropdown.scss'
 import { Link } from 'react-router-dom';
 import ModalHistoria from '../pages/ModalHistoria';
 import ModalMision from '../pages/ModalMision';
+import ModalVision from '../pages/ModalVision';
 import ModalValores from '../pages/ModalValores';
-import ModalObjetivosSeguridad from '../pages/ModalObjetivosSeguridad';
+
 
 
 
@@ -17,15 +18,17 @@ function NavbarDropdown() {
   const [modalShow3, setModalShow3] = React.useState(false);
   const [modalShow4, setModalShow4] = React.useState(false);
 
+
   return (
     <>
       <Nav variant="pills" className="NavbarDropdown">
 
       <NavDropdown title="nosotros" id="nav-dropdown">
         <NavDropdown.Item onClick={() => setModalShow1(true)}>Historia</NavDropdown.Item>
-        <NavDropdown.Item onClick={() => setModalShow2(true)}>Mision</NavDropdown.Item>
-        <NavDropdown.Item onClick={() => setModalShow3(true)}>Valores</NavDropdown.Item>
-        <NavDropdown.Item onClick={() => setModalShow4(true)}>Objetivos de seguridad</NavDropdown.Item>
+        <NavDropdown.Item onClick={() => setModalShow2(true)}>Misión</NavDropdown.Item>
+        <NavDropdown.Item onClick={() => setModalShow3(true)}>Visión</NavDropdown.Item>
+        <NavDropdown.Item onClick={() => setModalShow4(true)}>Valores</NavDropdown.Item>
+
       </NavDropdown>
 
       <NavDropdown title="SERVICIOS" id="nav-dropdown">
@@ -43,8 +46,9 @@ function NavbarDropdown() {
 
       <ModalHistoria show={modalShow1} onHide={() => setModalShow1(false)}/>
       <ModalMision show={modalShow2} onHide={() => setModalShow2(false)}/>
-      <ModalValores show={modalShow3} onHide={() => setModalShow3(false)}/>
-      <ModalObjetivosSeguridad show={modalShow4} onHide={() => setModalShow4(false)}/>
+      <ModalVision show={modalShow3} onHide={() => setModalShow3(false)}/>
+      <ModalValores show={modalShow4} onHide={() => setModalShow4(false)}/>
+
 
     </>
 
